@@ -7,5 +7,4 @@ Reading serial data from Arduino into a C++ program.
 
 
 #### Known Issues: ####
-  - Some kind of sync issue between Arduino code and C++. Can't read data every loop iteration.
-  - Delay between analog read update and C++ read update.
+  - Can't seem to read values at speed faster than 1 read per second.
