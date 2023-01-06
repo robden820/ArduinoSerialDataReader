@@ -20,7 +20,6 @@ int main()
 		std::cout << "We're connected \n";
 	}
 		
-
 	char incomingData[200] = "";		// don't forget to pre-allocate memory
 	int dataLength = 200;
 	int readResult = 0;
@@ -43,9 +42,10 @@ int main()
 		}
 		const char* sensorName = doc["sensor"];
 		double reading = doc["value"];
+		double reading2 = doc["value2"];
 		if (sensorName)
 		{
-			std::cout << "Iteration: " << iteration << " -> Sensor: " << sensorName << " -> Value: " << reading << "\n";
+			std::cout << "Iteration: " << iteration << " -> Sensor: " << sensorName << " -> Value: " << reading << " -> Value 2: " << reading2 << "\n";
 		}
 
 		Sleep(1000);
